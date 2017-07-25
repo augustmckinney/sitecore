@@ -1,0 +1,22 @@
+/*  
+  HEARTLAND
+*/
+.heartland-brand {
+  color: #898989;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /*Light*/
+  font-size: 1.438em; /*23px*/
+}
+
+.heartland-brand h1 {
+  color: #ce1025;
+  font-size: 2.5em; /*40px*/
+  font-weight: 700; /*Bold*/
+}
+
+.heartland-brand h2,
+.heartland-brand h3 {
+  color: #ce1025;
+  font-size: 2.25em; /*36px*/
+  font-weight: 300; /*Bold*/
+}
