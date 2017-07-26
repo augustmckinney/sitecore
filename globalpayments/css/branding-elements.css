@@ -19,3 +19,25 @@ h3.heartland-brand {
   font-size: 2.25em; /*36px*/
   font-weight: 300; /*Bold*/
 }
+
+button.heartland-brand {
+  background-color: transparent;
+  border: 1px solid #898989;
+  padding: 15px 25px;
+  font-size: 1.563em; /*25px*/
+
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: space-between;
+}
+button.heartland-brand svg {
+  margin-right: 10px;
+}
+button.heartland-brand svg + span {
+  color: #000;
+  font-size: 17px; 
+  font-weight: 700;
+}
