@@ -1,78 +1,79 @@
-.three-column-cards__list {
+.branding-card__list {
   padding-left: 0;
 }
 
-.three-column-cards__list-item {
+.branding-card__list-item {
   list-style: none;
 }
 @media (max-width: 768px) {
-  .three-column-cards__list-item {
+  .branding-card__list-item {
     padding-left: 0;
   }
 }
 
-.three-column-cards__list-item:first-child {
+.branding-card__list-item:first-child {
   padding-left: 0;
 }
 
-.three-column-cards__list-item a:hover {
+.branding-card__list-item a:hover {
   text-decoration: none;
 }
 
 /* Card */
-.three-column-cards__cta {
+.branding-card {
   border: 1px solid #898989;
   cursor: pointer;
-  min-height: 11.563em; /*185px*/
-  margin-bottom: 1.875em; /*30px*/
-  padding: 0.938em 1.563em; /*15px 25px*/
+  min-height: 185px; 
+  margin-bottom: 30px; 
+  padding: 15px 25px; 
 
   display: -webkit-box; 
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex; 
   display: flex;
-
   flex-direction: column;
   -webkit-flex-direction: column;
 }
 
-.three-column-cards__cta div:first-child {
+.branding-card div:first-child {
     -webkit-flex: 1 1 auto;
     -moz-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+    padding-bottom: 0;
 }
 
-.three-column-cards__cta div {
-  padding-bottom: 1.875em; /*30px*/
+.branding-card div {
+  line-height: 26px;
+  padding-bottom: 30px; 
 }
 
-.three-column-cards__cta img {
+.branding-card img {
   border: none;
 }
 
-.three-column-cards__cta span {
+.branding-card span {
   color: #898989;
   font-size: 1.063em; /*17px*/
   font-weight: 300;
 }
 
-.three-column-cards__cta div:nth-child(3n) {
+.branding-card div:nth-child(3n) {
+  max-height: 28px;
   padding-bottom: 0;
 }
 
-.three-column-cards__cta div:nth-child(3n) img {
-  margin-bottom: 10px;
+.branding-card div:nth-child(3n) svg {
   margin-right: 10px;
 }
 
-.three-column-cards__cta img + span {
+.branding-card svg + span {
   color: #000;
   font-size: 17px; 
   font-weight: 700;
 }
 
-.three-column-cards__content {
-  margin-bottom: 3.125em; /*50px*/
+.branding-card__content {
+  margin-bottom: 50px; 
 }
