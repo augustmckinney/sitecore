@@ -1,0 +1,80 @@
+.brand-asset__list {
+  padding-left: 0;
+}
+
+.brand-asset__list-item {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .brand-asset__list-item {
+    padding-left: 0;
+  }
+}
+
+.brand-asset__list-item:first-child {
+  padding-left: 0;
+}
+
+.brand-asset__list-item a:hover {
+  text-decoration: none;
+}
+
+/* CTA */
+.brand-asset__cta {
+  border: 1px solid #898989;
+  cursor: pointer;
+  min-height: 185px; 
+  margin-bottom: 30px; 
+  padding: 15px 25px; 
+}
+
+.brand-asset__cta div {
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.brand-asset__cta .doc-details {
+  height: 155px;
+}
+.brand-asset__cta .doc-details span {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.brand-asset__cta .doc-details div {
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.brand-asset__cta .doc-details svg {}
+
+.brand-asset__cta .doc-preview {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.brand-asset__cta span {
+  color: #898989;
+  font-size: 1.063em; /*17px*/
+  font-weight: 300;
+}
+
+.brand-asset__cta div:nth-child(3n) {
+  max-height: 28px;
+  padding-bottom: 0;
+}
+
+.brand-asset__cta span + div svg {
+  margin-right: 10px;
+}
+
+.brand-asset__cta svg + span {
+  color: #000;
+  font-size: 17px; 
+  font-weight: 700;
+  margin-bottom: -5px;
+}
