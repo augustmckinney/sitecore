@@ -1,64 +1,12 @@
 <style>
-/*--------------------------------
-
-  Added card styles for section 
-  here
-
----------------------------------*/
-
-/*Card styles*/
-.brand-asset__card {
-  border: 1px solid #898989;
-  cursor: pointer;
-  min-height: 185px;
-  padding: 15px 25px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-}
-.brand-asset__card div:first-child {
-  -webkit-flex: 1 1 auto;
-  -moz-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding-bottom: 0;
-}
-.brand-asset__card div {
-  line-height: 26px;
-  padding-bottom: 30px;
-}
-.brand-asset__card img {
-  border: none;
-}
-.brand-asset__card span {
-  color: #898989;
-  font-size: 17px; 
-  font-weight: 300;
-}
-.brand-asset__card div:nth-child(3n) {
-  max-height: 28px;
-  padding-bottom: 0;
-}
-.brand-asset__card div:nth-child(3n) svg {
-  margin-right: 10px;
-}
-.brand-asset__card svg + span {
-  color: #000;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-/*Container overrides*/
+/*
+    PAGE STYLES
+*/
+/*Custom overrides*/
 .column-copy.multi-column-copy {
   margin-bottom: 30px;
 }
-.multi-column-box  {
-  margin-bottom: 100px;
-}
+
 .multi-column-list .col-xs-12.col-sm-4:first-child {
   padding-left: 0;
 }
@@ -77,10 +25,15 @@
   max-width: 100%;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 760px) {
+  .multiple-column-cta .multiple-column-cta-container .multi-column-list .multi-column-box
+  {
+    margin-bottom: 50px;
+  }
+}
 </style>
 
-<a class="global-payments brand-asset__card" href="-/media/b9498caf4c3247d4ad2e230a54d528f5.ashx" target="_blank">
-
+<a class="global-payments brand-asset__card" href="-/media/b9498caf4c3247d4ad2e230a54d528f5.ashx" download="Heartland Logo PNG">
 
     <div class="brand-asset__image-thumb">
       <img height="38" alt="Sample Heartland logo" width="200" src="-/media/b9498caf4c3247d4ad2e230a54d528f5.ashx" />

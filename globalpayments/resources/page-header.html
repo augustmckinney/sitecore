@@ -1,49 +1,106 @@
 <style>
-/*--------------------------------
+/*
+    GLOBAL STYLES
+*/
 
-  Added all Global/Global Payment 
-  styles here.
+/*Brand colors*/
 
----------------------------------*/
+/*Heartland*/
+.heartland__text,
+.global-payments.heartland__text {color: #ce1025;}
+.heartland__bkg {background-color: #ce1025;}
+.heartland__border-color,
+.heartland__border-color.brand-asset__section {border-color: #ce1025;}
 
-/*Global Payments*/
-.global-payments {
+/*Xenial*/
+.xenial__text,
+.global-payments.xenial__text {color: #788e20;}
+.xenial__bkg {background-color: #788e20;}
+.xenial__border-color,
+.xenial__border-color.brand-asset__section {border-color: #788e20;}
+
+/*TouchNet*/
+.touchnet__text,
+.global-payments.touchnet__text {color: #00467f;}
+.touchnet__bkg {background-color: #00467f;}
+.touchnet__border-color,
+.touchnet__border-color.brand-asset__section {border-color: #00467f;}
+
+/*Global Styles*/
+.global-payments,
+.global-payments p {
   color: #898989;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; /*Light*/
+  font-family: 'Roboto', sans-serif !important;
   font-size: 23px; 
+  font-weight: 300; 
+  line-height: 120%;
   text-align: left;
+}
+
+/*Headers*/
+h1.global-payments.h1-hero,
+.global-payments h1.h1-hero {
+  color: #505050 !important;
+  font-size: 40px !important; 
+  font-weight: 300 !important; 
+  margin-bottom: 20px;
+  padding: 0;
 }
 h1.global-payments,
 .global-payments h1 {
   /*add class __text-color for brand color*/
-  font-size: 40px; 
-  font-weight: 700; /*Bold*/
+  font-size: 40px !important; 
+  font-weight: 700 !important; 
   margin: 0;
 }
 h2.global-payments,
 .global-payments h2,
 h3.global-payments,
 .global-payments h3 {
-  /*add class __text-color for brand color*/
-  font-size: 36px; 
-  font-weight: 300; /*Bold*/
+  /*add class __text-color for brand color*/ 
+  font-size: 36px !important;
+  font-weight: 300 !important; 
   padding-left: 0;
 }
 h3.global-payments,
 .global-payments h3 {
   margin-bottom: 30px;
+  margin-top: 20px !important;
 }
 
-/*Download button*/
+/*Lists*/
+.global-payments ul.no-styles {
+  padding: 0;
+  list-style: none;
+}
+.global-payments ul.no-styles li {
+  color: #000;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 23px; 
+  font-weight: 300; /*Light*/
+  line-height: 120%;  
+}
+
+/*Section*/
+.brand-asset__section {
+  border-top: 9px solid;
+  margin-bottom: 20px;
+  /*add class __border-color for brand color*/
+}
+
+/*Image Outline*/
+.global-payments .brand-asset__cta img {
+  outline: 1px solid #858585;
+}
+
+/*Download Button*/
 button.global-payments {
   background-color: transparent;
   border: 1px solid #898989;
-  padding: 15px 25px;
   font-size: 25px; 
-
-  width: 100%;
   margin-bottom: 20px;
+  padding: 15px 25px;
+  width: 100%;
 }
 button.global-payments svg {
   margin-right: 2%;
@@ -52,28 +109,84 @@ button.global-payments svg + span {
   color: #000;
   font-size: 17px; 
   font-weight: 700;
-}   
+} 
 
-.brand-asset__section {
-  margin-bottom: 20px;
-  border-top: 9px solid;
-  /*add class __border-color for brand color*/
+/* 
+    CTA 
+*/
+.brand-asset__cta {
+  border: 1px solid #898989;
+  cursor: pointer;
+  margin-bottom: 30px; 
+  min-height: 185px; 
+  padding: 15px 25px; 
+}
+@media screen and (max-width: 768px) {
+  .brand-asset__cta {
+    padding: 15px 20px;
+  }
 }
 
+.brand-asset__cta div {
+  display: flex;
+  flex-direction: column;
+  line-height: 26px;
+  padding-left: 0;
+}
 
-/*Brand colors*/
+/*Doc details LEFT*/
+.brand-asset__cta .doc-details {
+  height: 155px;
+}
+.brand-asset__cta .doc-details span {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #898989;
+  display: -webkit-box;
+  font-size: 25px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.brand-asset__cta .doc-details div {
+  align-items: flex-end;
+  flex-direction: row;
+  flex: 1;
+}
+.brand-asset__cta .doc-download svg {
+  margin-right: 10px;
+}
+.brand-asset__cta .doc-download span {
+  color: #000;
+  font-size: 17px; 
+  font-weight: 700;
+  margin-bottom: -5px;
+}
 
-/*Heartland*/
-.heartland__text {color: #ce1025;}
-.heartland__bkg {background-color: #ce1025;}
-.heartland__border-color {border-color: #ce1025;}
+/*Doc preview RIGHT*/
+.brand-asset__cta .doc-preview {
+  align-items: flex-end;
+  padding-left: 0;
+  padding-right: 0;
+}
+.brand-asset__cta .doc-preview img {
+  height: 100%;
+  outline: 1px solid #858585;
+  width: auto;
+}
 
-/*Xenial*/
-.xenial__text {color: #788e20;}
-.xenial__bkg {background-color: #788e20;}
-.xenial__border-color {border-color: #788e20;}
+p.doc-download {
+  color: #505050;
+  font-size: 18px; 
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
-/*Custom styles for callout*/
+/*
+    PAGE STYLES
+*/
+/*Custom overrides*/
 .intro-callout.container-fluid {
   background-color: #dfdfdf;
   max-height: 150px;
@@ -84,4 +197,4 @@ button.global-payments svg + span {
 }
 </style>
 
-<h1 class="global-payments heartland__text">Heartland Assets</h1>
+<h1 class="global-payments xenial__text">Xenial Assets</h1>

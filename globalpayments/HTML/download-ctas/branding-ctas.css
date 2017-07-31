@@ -40,26 +40,31 @@
 }
 .brand-asset__cta .doc-details span {
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
 }
 .brand-asset__cta .doc-details div {
   flex: 1;
   flex-direction: row;
   align-items: flex-end;
 }
-.brand-asset__cta .doc-details svg {}
 
 .brand-asset__cta .doc-preview {
   padding-left: 15px;
   padding-right: 0;
 }
 
+.brand-asset__cta .doc-preview img {
+  height: 155px;
+  width: 155px;
+}
+
 .brand-asset__cta span {
   color: #898989;
-  font-size: 1.063em; /*17px*/
+  font-size: 17px; 
   font-weight: 300;
 }
 
