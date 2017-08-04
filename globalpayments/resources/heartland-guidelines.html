@@ -16,34 +16,28 @@
   margin-bottom: 20px;
 }
 
-/*Download button styles*/
-button .doc-button__text {
-  font-size: 25px;
-  padding: 0;
-}   
-button .doc-button__download {
-  padding: 0;
-  text-align: right;
-}
-
 @media screen and (max-width: 970px) {
   .generic-content-container div.global-payments {
     padding-bottom: 50px;
   }
 }
+
+.global-payments.row {
+  margin-bottom: 30px;
+}
 </style>
 
-<h2 class="global-payments xenial__text col-xs-12 col-sm-12 col-md-12 col-lg-12">Guidelines and Ordering</h2>
+<h2 class="global-payments heartland__text col-xs-12 col-sm-12 col-md-12 col-lg-12">Guidelines and Ordering</h2>
 
-<div class="row">
+<div class="global-payments row">
   <p class="global-payments col-sm-12 col-md-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales id est eget bibendum. In sit amet ex et diam viverra tincidunt ac ac ligula. Curabitur tincidunt pretium vestibulum. Aenean finibus aliquet libero, vitae aliquam urna dapibus eu. Nulla mollis fringilla tellus.</p>
 
 
   <div class="col-xs-12 col-sm-12 col-md-4">
-    <button class="global-payments">
-      <span class="doc-button__text col-xs-8 col-sm-8 col-md-7 col-lg-7">
+    <a class="brand-asset__button col-xs-12 col-sm-12">
+      <div class="doc-button__text col-xs-8 col-sm-8 col-md-7 col-lg-7">
         Brand Guidelines
-      </span>
+      </div>
 
       <div class="doc-button__download col-xs-4 col-sm-4 col-md-5 col-lg-5">
         <svg 
@@ -54,12 +48,12 @@ button .doc-button__download {
         </svg>
         <span>Download</span>
       </div>
-    </button>
+    </a>
 
-    <button class="global-payments">
-      <span class="doc-button__text col-xs-8 col-sm-8 col-md-7 col-lg-7">
-        Brand Guidelines
-      </span>
+    <a class="brand-asset__button col-xs-12 col-sm-12" href="-/media/af7d6e101f2d4416996d8740a3699940.ashx" download="Heartland Logo Guidelines">
+      <div class="doc-button__text col-xs-8 col-sm-8 col-md-7 col-lg-7">
+        Logo Guidelines
+      </div>
 
       <div class="doc-button__download col-xs-4 col-sm-4 col-md-5 col-lg-5">
         <svg 
@@ -70,6 +64,6 @@ button .doc-button__download {
         </svg>
         <span>Download</span>
       </div>
-    </button>
+    </a>
   </div>
 </div>

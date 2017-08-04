@@ -68,6 +68,15 @@ h3.global-payments,
   margin-top: 20px !important;
 }
 
+/*Links*/
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
 /*Lists*/
 .global-payments ul.no-styles {
   padding: 0;
@@ -110,6 +119,9 @@ button.global-payments svg + span {
   font-size: 17px; 
   font-weight: 700;
 } 
+button.global-payments:hover {
+  box-shadow: inset 0px 0px 3px #898989;
+}
 
 /* 
     CTA 
@@ -183,18 +195,90 @@ p.doc-download {
   margin-bottom: 10px;
 }
 
-/*
-    PAGE STYLES
-*/
-/*Custom overrides*/
-.intro-callout.container-fluid {
-  background-color: #dfdfdf;
-  max-height: 150px;
+a:hover .brand-asset__cta {
+  box-shadow: inset 0px 0px 3px #898989;
+  font-weight: 300;
 }
-.intro-callout .intro-callout-container.padding-bottom-content {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-</style>
 
-<h1 class="global-payments xenial__text">Xenial Assets</h1>
+/*
+    Card
+*/
+.brand-asset__card {
+  -webkit-flex-direction: column;
+  border: 1px solid #898989;
+  color: #898989;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 185px;
+  padding: 15px 25px;
+}
+.brand-asset__card div:first-child {
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-bottom: 0;
+}
+.brand-asset__card div {
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+.brand-asset__card img {
+  border: none;
+}
+.brand-asset__card div:nth-child(3n) {
+  max-height: 28px;
+  padding-bottom: 0;
+}
+.brand-asset__card div:nth-child(3n) svg {
+  margin-right: 10px;
+}
+.brand-asset__card svg + span {
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/*Hover/focus states*/
+a.global-payments.brand-asset__card:hover {
+  box-shadow: inset 0 0 3px #898989;
+}
+.brand-asset__card:hover span,
+.brand-asset__card:focus span {
+  color: #898989;
+  font-weight: 300;
+}
+.brand-asset__card:hover svg + span,
+.brand-asset__card:focus svg + span {
+  color: #000;
+  font-weight: 700;
+}
+
+
+    /*
+    PAGE STYLES
+    */
+    /*Custom overrides*/
+    .intro-callout .light-theme {
+    /*background-color: #c4c4c4;*/
+    }
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    height: 400px;
+    margin-bottom: 30px;
+    }
+    @media screen and (max-width: 768px) {
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    height: 250px;
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    margin-bottom: 30px;
+    }
+    }
+</style>
