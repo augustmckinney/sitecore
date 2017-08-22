@@ -1,23 +1,22 @@
 <style>
-
 /*Custom overrides*/
 body {
   padding-top: 0 !important;
-  margin-top: 90px;
+  margin-top: 78px;
 }
-@media screen and (min-width: 627px) {
+@media screen and (min-width: 630px) {
   body {
-    margin-top: 59px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    margin-top: 144px;
+    margin-top: 145px;
   }
 }
 @media screen and (min-width: 990px) {
   body {
-    margin-top: 144px;
+    margin-top: 145px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -55,31 +54,31 @@ header.global-payments {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .global-payments.container-fluid {
     box-shadow: 0px 1px 2px #898989;
   }   
 } 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header.global-payments .header-container .fixed-header, header.global-payments {
     box-shadow: 0px 1px 2px #898989;
   }   
 } 
 
 /*Logo*/
+header.global-payments .header-container .fixed-header .logo-column {
+    padding: 2% 0;
+}
+@media screen and (max-width: 767px) {
+  header.global-payments .header-container .fixed-header .logo-column {
+    padding: 15px;
+  }
+}
+
 .global-payments .logo-column p {
   color: #fff;
   font-size: 40px;
-}
-@media screen and (min-width: 1200px) {
-  .global-payments .logo-column p {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .global-payments .logo-column p {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .global-payments .logo-column p {
@@ -114,6 +113,7 @@ header.global-payments {
 }
 @media screen and (min-width: 768px) {
   .global-payments .menu-column #main-menu {
+    margin-top: 0;
     padding: 0 15px 0 0;
   }
 } 
@@ -122,9 +122,10 @@ header.global-payments {
   font-size: 20px;
   font-weight: 300;
   line-height: 20px;
-  padding: 8px 0 8px 16px;
+  padding: 4px 0 4px 16px;
 }
-.global-payments .menu-column #main-menu li:hover {
+.global-payments .menu-column #main-menu li:hover,
+.global-payments .menu-column #main-menu li.active {
   font-weight: 700;
   background: transparent;
 }
@@ -136,13 +137,36 @@ header.global-payments {
   color: #fff;
   transition-delay: 0s;
 }
+/*Global Payments nav item*/
 @media screen and (min-width: 768px) {
   .global-payments .menu-column #main-menu > li:first-of-type {
+      margin-left: -60px;
       padding-top: 0;
   }
 }
 
+/*Mobile hamburger*/
+.global-payments .menu-column #main-menu > li#hamburger-mobile .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 /*Mobile dropdown*/
+@media screen and (max-width: 768px) {
+  header.global-payments #main-menu-mobile-collapse {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  header.global-payments #main-menu-mobile-collapse {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header.global-payments #main-menu-mobile-collapse {
+    margin-top: 0;
+  }
+}
+
 .global-payments #main-menu-mobile-collapse > li {
   border-bottom: 1px solid #9b9da0;
   font-family: "Roboto", sans-serif;
@@ -157,7 +181,6 @@ header.global-payments {
 .global-payments #main-menu-mobile-collapse li.active > a {
     font-weight: 700;
 }
-
 </style>
 <header class="global-payments container-fluid overlapping-header" id="">
   <div class="header-container container">
@@ -169,12 +192,12 @@ header.global-payments {
       </div>
       <div class="menu-column col-xs-3 col-lg-2 hidden-sm hidden-md">
         <ul id="main-menu">
+          <li><a href="/en/branding/global-branding-center/global-payments">Global Payments</a></li>
           <li><a href="/en/branding/global-branding-center/heartland">Heartland</a></li>
           <li><a href="/en/branding/global-branding-center/touchnet">TouchNet</a></li>
           <li><a href="/en/branding/global-branding-center/xenial">Xenial</a></li>
           <!--<li><a href="#">Brand</a></li>-->
-          <!--<li><a href="#">Brand</a></li>-->
-          <li><a href="#">Contact</a></li>
+          <li><a href="/en/branding/global-branding-center/contact">Contact</a></li>
                     
           <li id="hamburger-mobile">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-mobile-collapse" aria-expanded="false">
@@ -194,12 +217,12 @@ header.global-payments {
       </div>
       <div class="menu-column col-sm-2 col-md-2 col-xl-2 hidden-xs hidden-lg">
         <ul id="main-menu">
+          <li><a href="/en/branding/global-branding-center/global-payments">Global Payments</a></li>
           <li><a href="/en/branding/global-branding-center/heartland">Heartland</a></li>
           <li><a href="/en/branding/global-branding-center/touchnet">TouchNet</a></li>
           <li><a href="/en/branding/global-branding-center/xenial">Xenial</a></li>
           <!--<li><a href="#">Brand</a></li>-->
-          <!--<li><a href="#">Brand</a></li>-->
-          <li><a href="#">Contact</a></li>
+          <li><a href="/en/branding/global-branding-center/contact">Contact</a></li>
         </ul>
       </div>
 
@@ -212,10 +235,11 @@ header.global-payments {
 
     <!--Mobile Dropdown-->
     <ul class="collapse" id="main-menu-mobile-collapse" aria-expanded="false" style="height: 2px;">
+      <li><a href="/en/branding/global-branding-center/global-payments">Global Payments</a></li>
       <li><a href="/en/branding/global-branding-center/heartland">Heartland</a></li>
       <li><a href="/en/branding/global-branding-center/touchnet">TouchNet</a></li>
       <li><a href="/en/branding/global-branding-center/xenial">Xenial</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/en/branding/global-branding-center/contact">Contact</a></li>
     </ul>
   </div>
   <div class="clearfix"></div>
