@@ -1,32 +1,45 @@
-/*-----------------------------------------------
-
-  Added all Global/Global Payment 
-  styles here.
-
-------------------------------------------------*/
-
+<style>
+/*
+    GLOBAL STYLES
+*/
 /*Brand colors*/
 
+/*Global Payments*/
+/*Color: #00467f*/
+.global__text,
+.global-payments.global__text {color: #000;}
+.global__bkg {background-color: #000;}
+.global__border-color,
+.global__border-color.brand-asset__section {border-color: #000;}
+
 /*Heartland*/
+/*Color: #ce1025*/
 .heartland__text,
-.global-payments.heartland__text {color: #ce1025;}
-.heartland__bkg {background-color: #ce1025;}
+.global-payments.heartland__text {color: #000;}
+.heartland__bkg {background-color: #000;}
 .heartland__border-color,
-.heartland__border-color.brand-asset__section {border-color: #ce1025;}
+.heartland__border-color.brand-asset__section {border-color: #000;}
 
 /*Xenial*/
+/*Color: #788e20*/
 .xenial__text,
-.global-payments.xenial__text {color: #788e20;}
-.xenial__bkg {background-color: #788e20;}
+.global-payments.xenial__text {color: #000;}
+.xenial__bkg {background-color: #000;}
 .xenial__border-color,
-.xenial__border-color.brand-asset__section {border-color: #788e20;}
+.xenial__border-color.brand-asset__section {border-color: #000;}
 
-/*TouchNet*/
+/*Touchnet*/
+/*Color: #563d82*/
 .touchnet__text,
-.global-payments.touchnet__text {color: #00467f;}
-.touchnet__bkg {background-color: #00467f;}
+.global-payments.touchnet__text {color: #000;}
+.touchnet__bkg {background-color: #000;}
 .touchnet__border-color,
-.touchnet__border-color.brand-asset__section {border-color: #00467f;}
+.touchnet__border-color.brand-asset__section {border-color: #000;}
+
+/*Contact text color*/
+.contact-text {
+  color: #000 !important;
+}
 
 /*Global Styles*/
 .global-payments,
@@ -37,6 +50,12 @@
   font-weight: 300; 
   line-height: 120%;
   text-align: left;
+}
+
+/*Intro*/
+.global-payments__intro {
+  font-size: 17px !important;
+  line-height: 22px !important;
 }
 
 /*Headers*/
@@ -62,12 +81,13 @@ h3.global-payments,
   /*add class __text-color for brand color*/ 
   font-size: 36px !important;
   font-weight: 300 !important; 
+  line-height: inherit;
   padding-left: 0;
 }
 h3.global-payments,
 .global-payments h3 {
-  margin-bottom: 30px;
-  margin-top: 20px !important;
+  margin-bottom: 15px !important;
+  margin-top: 5px !important;
 }
 
 /*Links*/
@@ -90,6 +110,17 @@ a:hover {
   font-size: 23px; 
   font-weight: 300; /*Light*/
   line-height: 120%;  
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .global-payments ul.no-styles li {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .global-payments ul.no-styles li {
+    font-size: 17px;
+  }
 }
 
 /*Section*/
@@ -101,7 +132,7 @@ a:hover {
 
 /*Image Outline*/
 .global-payments .brand-asset__cta img {
-  outline: 1px solid #858585;
+  /*outline: 1px solid #858585;*/
 }
 
 /*Button*/
@@ -184,7 +215,8 @@ a.brand-asset__button:hover {
   -webkit-line-clamp: 3;
   color: #898989;
   display: -webkit-box;
-  font-size: 25px;
+  font-size: 17px;
+  line-height: 22px;
   overflow: hidden;
   text-align: left;
   text-overflow: ellipsis;
@@ -212,8 +244,7 @@ a.brand-asset__button:hover {
   padding-right: 0;
 }
 .brand-asset__cta .doc-preview img {
-  height: 100%;
-  outline: 1px solid #858585;
+  /*outline: 1px solid #858585;*/
   width: auto;
 }
 
@@ -259,6 +290,7 @@ a:hover .brand-asset__cta {
 }
 .brand-asset__card img {
   border: none;
+  max-width: 182px;
 }
 .brand-asset__card div:nth-child(3n) {
   max-height: 28px;
@@ -271,6 +303,11 @@ a:hover .brand-asset__cta {
   color: #000;
   font-size: 17px;
   font-weight: 700;
+}
+
+.brand-asset__card-content {
+    font-size: 17px;
+    line-height: 22px;
 }
 
 /*Hover/focus states*/
@@ -287,3 +324,55 @@ a.global-payments.brand-asset__card:hover {
   color: #000;
   font-weight: 700;
 }
+
+/*
+    PAGE STYLES
+*/
+/*Custom overrides*/
+.intro-callout.container-fluid {
+  margin-top: 0;
+}
+@media screen and (min-width: 1170px) and (max-width: 1200px) {
+  .intro-callout.container-fluid {
+    margin-top: 34px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .intro-callout.container-fluid {
+    margin-top: 31px;
+  }
+}
+@media screen and (max-width: 630px) {
+   .intro-callout.container-fluid {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 627px) {
+  .intro-callout.container-fluid {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .intro-callout.container-fluid {
+    margin-top: -12px;
+  }
+}
+
+    .intro-callout .light-theme {
+    /*background-color: #c4c4c4;*/
+    }
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    height: 400px;
+    margin-bottom: 30px;
+    }
+    @media screen and (max-width: 768px) {
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    height: 250px;
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .intro-callout .intro-callout-container.padding-bottom-content {
+    margin-bottom: 30px;
+    }
+    }
+</style>

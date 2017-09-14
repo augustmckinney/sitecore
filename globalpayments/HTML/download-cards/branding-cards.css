@@ -1,0 +1,79 @@
+.brand-asset__list {
+  padding-left: 0;
+}
+
+.brand-asset__list-item {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .brand-asset__list-item {
+    padding-left: 0;
+  }
+}
+
+.brand-asset__list-item:first-child {
+  padding-left: 0;
+}
+
+.brand-asset__list-item a:hover {
+  text-decoration: none;
+}
+
+/* Card */
+.brand-asset__card {
+  border: 1px solid #898989;
+  cursor: pointer;
+  min-height: 185px; 
+  margin-bottom: 30px; 
+  padding: 15px 25px; 
+
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.brand-asset__card div:first-child {
+    -webkit-flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-bottom: 0;
+}
+
+.brand-asset__card div {
+  line-height: 26px;
+  padding-bottom: 30px; 
+}
+
+.brand-asset__card img {
+  border: none;
+}
+
+.brand-asset__card span {
+  color: #898989;
+  font-size: 1.063em; /*17px*/
+  font-weight: 300;
+}
+
+.brand-asset__card div:nth-child(3n) {
+  max-height: 28px;
+  padding-bottom: 0;
+}
+
+.brand-asset__card div:nth-child(3n) svg {
+  margin-right: 10px;
+}
+
+.brand-asset__card svg + span {
+  color: #000;
+  font-size: 17px; 
+  font-weight: 700;
+}
+
+.brand-asset__content {
+  margin-bottom: 50px; 
+}
